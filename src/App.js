@@ -14,7 +14,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <About />
       <CallForPapersNavbar />
       <ImportantDetails />
       <Contact />
@@ -24,6 +23,7 @@ function App() {
       <ConferenceCommittee />
       <CallForPapersHomePage />
       <Footer />
+      <About />
     </div>
   );
 }
