@@ -4,6 +4,19 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0px 30px;
+    color: black;
+    background-color: #f6f9fe;
+}
+
+.about_head{
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    background-color: #e7f1fd;
+    color: #106eea;
+    font-weight: bold;
 }
 
 .about_section{
@@ -14,9 +27,28 @@
 }
 
 .about_title{
+    font-size: 28px;
+    margin: 10px;
+    font-weight: bold;
     color: #106eea;
 }
 
 .about_content{
+    font-size: 17px;
+    text-align: left;
+}
 
+.about_organize{
+    margin: 10px;
+    margin-bottom: 20px;
+}
+.about_organize_head{
+    font-weight: bold;
+    margin: 1px;
+    font-size: 16px;
+}
+
+.about_organizer{
+    margin: 1px;
+    font-size: 15px;
 }
