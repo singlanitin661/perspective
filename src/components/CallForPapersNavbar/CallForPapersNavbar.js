@@ -1,5 +1,5 @@
-import React from "react";
-import "./CallForPapersNavbar.scss"
+import "./CallForPapersNavbar.scss";
+
 const data = [
     {
         title: "Computing",
@@ -33,10 +33,10 @@ const data = [
             "GANs",
         ],
     },
-    {
-        title: "Software Engineering",
-        subparts: ["Recommender systems", "Semantic web analysis"],
-    },
+    // {
+    //     title: "Software Engineering",
+    //     subparts: ["Recommender systems", "Semantic web analysis"],
+    // },
     {
         title: "Machine Vision",
         subparts: [
@@ -73,7 +73,7 @@ const data = [
             "Smart Healthcare",
         ],
     },
-    { title: "Intelligent Transportation Systems", subparts: [] },
+    // { title: "Intelligent Transportation Systems", subparts: [] },
 ];
 
 const CallForPapersNavbar = () => {
@@ -83,11 +83,15 @@ const CallForPapersNavbar = () => {
                 return (
                     <div key={title} className="paper-navbar__item">
                         <p className="paper-navbar__title">{title}</p>
-
                         <div className="paper-navbar__subpart">
                             {subparts?.map((subpart) => {
                                 return (
-                                    <p className="paper-navbar__option" style={{color: "blue"}} key={subpart}>{subpart}</p>
+                                    <p
+                                        className="paper-navbar__option"
+                                        key={subpart}
+                                    >
+                                        {subpart}
+                                    </p>
                                 );
                             })}
                         </div>
