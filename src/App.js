@@ -22,8 +22,8 @@ function App() {
       <Sponsers />
       <ConferenceCommittee />
       <CallForPapersHomePage />
-      <Footer />
       <About />
+      <Footer />
     </div>
   );
 }
