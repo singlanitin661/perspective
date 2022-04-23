@@ -1,5 +1,5 @@
 import About from "./components/About/About";
-import CallForPapersHomePage from "./components/CallForPapersHomePage";
+import CallForPapersHomePage from "./components/CallForPapersHomePage/CallForPapersHomePage";
 import CallForPapersNavbar from "./components/CallForPapersNavbar/CallForPapersNavbar";
 import ConferenceCommittee from "./components/ConferenceCommittee";
 import Contact from "./components/Contact";
@@ -23,6 +23,7 @@ function App() {
       <Sponsers />
       <ConferenceCommittee />
       <CallForPapersHomePage />
+      <Footer />
     </div>
   );
 }
