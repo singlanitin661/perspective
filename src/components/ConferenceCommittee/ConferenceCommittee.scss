@@ -1,0 +1,32 @@
+.ConferenceCommittee__advisoryheading {
+    text-align: center;
+}
+
+.ConferenceCommittee__items {
+    margin-left: 155px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+.ConferenceCommittee__item {
+    h5 {
+        font-size: 20px;
+    }
+}
+
+.ConferenceComittee__grid {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+
+    
+}
+
+.ConferenceComittee__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 50%;
+    }
+}
