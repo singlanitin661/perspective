@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/perspective/static/css/main.bb261fff.css",
+    "main.js": "/perspective/static/js/main.1658643c.js",
+    "static/media/pec-logo.png": "/perspective/static/media/pec-logo.b38b966e43a9e4a925cc.png",
+    "index.html": "/perspective/index.html",
+    "main.bb261fff.css.map": "/perspective/static/css/main.bb261fff.css.map",
+    "main.1658643c.js.map": "/perspective/static/js/main.1658643c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb261fff.css",
+    "static/js/main.1658643c.js"
+  ]
+}
