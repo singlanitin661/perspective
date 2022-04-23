@@ -4,7 +4,7 @@ import CallForPapersNavbar from "./components/CallForPapersNavbar/CallForPapersN
 import ConferenceCommittee from "./components/ConferenceCommittee";
 import Contact from "./components/Contact";
 import Corousal from "./components/Carousel/Carousel";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import ImportantDetails from "./components/ImportantDetails";
 import Login from "./components/Login";
 import Sponsers from "./components/Sponsers";
@@ -14,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <About />
       <CallForPapersNavbar />
       <ImportantDetails />
       <Contact />
@@ -22,8 +23,6 @@ function App() {
       <Sponsers />
       <ConferenceCommittee />
       <CallForPapersHomePage />
-      <About />
-      <Footer />
     </div>
   );
 }
