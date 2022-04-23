@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <About />
+      
       <CallForPapersNavbar />
       <ImportantDetails />
       <Contact />
@@ -22,6 +22,7 @@ function App() {
       <Sponsers />
       <ConferenceCommittee />
       <CallForPapersHomePage />
+      <About />
     </div>
   );
 }
