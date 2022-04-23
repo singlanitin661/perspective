@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import ImportantDetails from "./components/ImportantDetails";
 import Login from "./components/Login";
 import Sponsers from "./components/Sponsers";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Sponsers />
       <ConferenceCommittee />
       <CallForPapersHomePage />
+      <Footer />
     </div>
   );
 }
