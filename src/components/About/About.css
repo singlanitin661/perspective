@@ -1,0 +1,22 @@
+.about_root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_title{
+    color: #106eea;
+}
+
+.about_content{
+
+}
