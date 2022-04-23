@@ -1,0 +1,22 @@
+.sponser_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .sponser_card {
+        width: 30%;
+        margin: 10px;
+        padding: 10px;
+
+        .sponser_image {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .sponser_title {
+            font-size: 20px;
+        }
+    }
+}

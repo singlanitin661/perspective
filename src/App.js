@@ -7,7 +7,7 @@ import Corousal from "./components/Carousel/Carousel";
 import Header from "./components/Header/Header";
 import ImportantDetails from "./components/ImportantDetails";
 import Login from "./components/Login";
-import Sponsers from "./components/Sponsers";
+import Sponsers from "./components/Sponsers/Sponsers";
 import Footer from "./components/Footer/Footer";
 
 function App() {
