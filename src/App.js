@@ -3,7 +3,7 @@ import CallForPapersHomePage from "./components/CallForPapersHomePage";
 import CallForPapersNavbar from "./components/CallForPapersNavbar";
 import ConferenceCommittee from "./components/ConferenceCommittee";
 import Contact from "./components/Contact";
-import Corousal from "./components/Corousal";
+import Carousel from "./components/Carousel/Carousel";
 import Header from "./components/Header";
 import ImportantDetails from "./components/ImportantDetails";
 import Login from "./components/Login";
@@ -13,12 +13,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <About />
+      {/* <About /> */}
       <CallForPapersNavbar />
       <ImportantDetails />
       <Contact />
       <Login />
-      <Corousal />
+      <Carousel />
       <Sponsers />
       <ConferenceCommittee />
       <CallForPapersHomePage />

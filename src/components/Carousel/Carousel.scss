@@ -157,8 +157,7 @@ body {
 
     &:hover {
       transition: none;
-      transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
-        rotateX(calc(var(--y) * -45deg));
+      transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
     }
   }
 }

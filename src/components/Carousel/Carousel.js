@@ -1,5 +1,6 @@
 import React from 'react';
-import './Corousal.scss';
+import { useEffect } from 'react';
+import './Carousel.scss';
 console.clear();
 
 const slides = [
@@ -86,6 +87,7 @@ const initialState = {
   slideIndex: 0
 };
 
+
 const slidesReducer = (state, event) => {
   if (event.type === "NEXT") {
     return {
@@ -140,6 +142,13 @@ function Slide({ slide, offset }) {
 
 function App() {
   const [state, dispatch] = React.useReducer(slidesReducer, initialState);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      dispatch({type: "NEXT"});
+    }, 3500);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="slides">
