@@ -9,11 +9,20 @@
 .header-main{
     background-color: #034170;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 0;
     /* border: 2px solid black; */
     font-size: 15px;
+}
+
+.header-logo {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    border-radius: 50%;
 }
 
 .header-list{
@@ -29,6 +38,7 @@
     /* border: 1px solid white; */
     padding: 0.5rem 1rem;
     color: white;
+    font-size: 20px;
 }
 
 .bars{
