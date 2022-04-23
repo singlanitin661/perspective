@@ -1,0 +1,28 @@
+.paper-navbar__main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .paper-navbar__item {
+        padding: 5px 5px;
+        margin: 5px 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .paper-navbar__title {
+            display: block;
+            align-items: center;
+        }
+        .paper-navbar__title:hover, .paper-navbar__subpart{
+            background-color: rgb(69, 63, 63);
+            display: block;
+            
+        }
+        .paper-navbar__subpart {
+            display: none;
+        }
+    }
+
+    
+}
