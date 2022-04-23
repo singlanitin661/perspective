@@ -39,9 +39,9 @@ body {
     color: white;
     position: absolute;
     font-size: 5rem;
-    width: 5rem;
+    width: 35rem;
     height: 5rem;
-    top: 30%;
+    top: 35%;
     transition: opacity 0.3s;
     opacity: 0.7;
     z-index: 5;
@@ -76,8 +76,8 @@ body {
 }
 
 .slideContent {
-  width: 30vw;
-  height: 40vw;
+  width: 60vw;
+  height: 30vw;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -86,9 +86,10 @@ body {
 
   display: grid;
   align-content: center;
+  justify-content: center;
 
   transform-style: preserve-3d;
-  transform: perspective(1000px) translateX(calc(100% * var(--offset))) rotateY(calc(-45deg * var(--dir)));
+  transform: perspective(1000px) translateX(calc(70% * var(--offset))) rotateY(calc(-45deg * var(--dir)));
 }
 
 .slideContentInner {
