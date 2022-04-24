@@ -10,8 +10,8 @@ function LoginUi() {
           Enter your credentials to access your account.
         </p>
         <div className="login-wrapper">
-          <a href="#" className="btn btn-google">
-            <img src="https://img.icons8.com/fluency/48/000000/google-logo.png" />
+          <a href="/" classNsame="btn btn-google">
+            <img src="https://img.icons8.com/fluency/48/000000/google-logo.png" alt="google" />
             Log In with Google
           </a>
           <div className="line-breaker">
@@ -51,7 +51,7 @@ function LoginUi() {
       <h1 className="heading-secondary">
           Welcome to <span className="lg">PRESPECTIVE !</span>
         </h1>
-        <img  className = "logopic" src={require('./prespective.PNG')} />
+        <img  className = "logopic" src={require('./prespective.PNG')} alt='presPECtive' />
         
       </div>
     </div>

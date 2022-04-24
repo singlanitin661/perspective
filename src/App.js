@@ -6,9 +6,9 @@ import Contact from "./components/Contact";
 import Corousal from "./components/Carousel/Carousel";
 import Header from "./components/Header/Header";
 import ImportantDetails from "./components/ImportantDetails";
-import Login from "./components/Login";
 import Sponsers from "./components/Sponsers/Sponsers";
 import Footer from "./components/Footer/Footer";
+import LoginUi from "./components/LoginUi/LoginUi";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <CallForPapersNavbar />
       <ImportantDetails />
       <Contact />
-      <Login />
+      {/* <LoginUi /> */}
       <Corousal />
       <About />
       <Sponsers />
