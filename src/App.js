@@ -15,8 +15,8 @@ function App() {
     <div className="App">
       <Header />
       <CallForPapersNavbar />
-      <ImportantDetails />
-      <Contact />
+      {/* <ImportantDetails /> */}
+      {/* <Contact /> */}
       {/* <LoginUi /> */}
       <Corousal />
       <About />
