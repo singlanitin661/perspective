@@ -326,41 +326,38 @@ const data2 = {
 const ConferenceCommittee = () => {
   return (
     <>
-      <div className="accordion" id="accordionPanelsStayOpenExample">
+      <div className="accordion accordian-flush" id="accordionFlushExample">
         {data.map((items, i) => {
           return (
             <div key={i} className="accordion-item">
               <h2
                 className="accordion-header"
-                id={`panelsStayOpen-heading${data.id}`}
+                id={`flush-heading-${i}`}
               >
                 <button
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target={`#panelsStayOpen-collapse${data.id}`}
+                  data-bs-target={`#flush-collapse-${i}`}
                   aria-expanded="false"
-                  aria-controls={`panelsStayOpen-collapse${data.id}`}
+                  aria-controls={`flush-collapse-${i}`}
                 >
                   {items.title}
                 </button>
               </h2>
               <div
-                id={`panelsStayOpen-collapse${data.title}`}
+                id={`flush-collapse-${i}`}
                 className="accordion-collapse collapse"
-                aria-labelledby={`panelsStayOpen-heading${data.title}`}
+                aria-labelledby={`flush-heading-${i}`}
+                data-bs-parent="#accordionFlushExample"
               >
                 <div className="accordion-body ConferenceComittee__grid">
                   {items.members.map((member, i) => {
                     return (
                       <div
                         key={i}
-                        className="card ConferenceComittee__card accordion-button collapsed"
+                        className="card ConferenceComittee__card"
                         style={{ width: "18rem" }}
-                        data-bs-toggle="collapse"
-                        data-bs-target={`#panelsStayOpen-collapse${member.name}`}
-                        aria-expanded="false"
-                        aria-controls={`panelsStayOpen-collapse${member.name}`}
                       >
                         <img
                           className="card-img-top"

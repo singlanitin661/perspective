@@ -26,7 +26,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     img {
         width: 50%;
+    }
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: #fff;
     }
 }
