@@ -2,13 +2,19 @@ import React, { useState } from "react";
 import "./Header.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import pecLogo from "../../assets/PERS.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [hamburger, setHamburger] = useState(false);
     const toggle = () => {
         setHamburger(!hamburger);
     };
-    const arr = ["Home", "Research", "Gallery", "FAQ", "Awards"];
+    const arr = [
+        { name: "Home", link: "/" },
+        { name: "Gallery", link: "/" },
+        { name: "FAQs", link: "/" },
+        { name: "Login", link: "/login" },
+    ];
     return (
         <>
             <div className="header-root">
@@ -16,7 +22,11 @@ const Header = () => {
                     {!hamburger ? <FaBars /> : <FaTimes />}
                 </div>
                 <nav className="header-main">
-                  <img src={pecLogo} alt="persPECtive" className="header-logo"/>
+                    <img
+                        src={pecLogo}
+                        alt="persPECtive"
+                        className="header-logo"
+                    />
                     <ul className={`header-list` + (hamburger ? +"-ham" : "")}>
                         {arr.map((item) => {
                             return (
@@ -26,7 +36,7 @@ const Header = () => {
                                         (hamburger ? +"-ham" : "")
                                     }
                                 >
-                                    {item}
+                                    <Link to={item.link}>{item.name}</Link>
                                 </li>
                             );
                         })}

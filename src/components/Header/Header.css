@@ -41,6 +41,12 @@
     font-size: 20px;
 }
 
+.header-list-item a {
+    color: white;
+    text-decoration: none;
+    
+}
+
 .bars{
     display: none;
     /* color: white; */

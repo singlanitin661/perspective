@@ -14,11 +14,11 @@ import Contact from "./components/Contact/Contact";
 function App() {
     return (
         <div className="App">
+            <Router>
             <Header />
             <CallForPapersNavbar />
-            <Router>
                 <Routes>
-                    <Route exact path="/" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route exact path="/login" element={<Login />} />
                     <Route exact path="/register" element={<Register />} />
                     <Route exact path="/contact" element={<Contact />} />
