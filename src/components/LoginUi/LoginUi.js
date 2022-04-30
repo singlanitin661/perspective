@@ -1,61 +1,55 @@
+import React from "react";
 import "./LoginUi.css";
-function LoginUi() {
-  return (
-    <div className="container">
-      <main className="signup-container">
-        <h1 className="heading-primary">
-          Log in<span className="span-blue">.</span>
-        </h1>
-        <p className="text-mute">
-          Enter your credentials to access your account.
-        </p>
-        <div className="login-wrapper">
-          <a href="/" classNsame="btn btn-google">
-            <img src="https://img.icons8.com/fluency/48/000000/google-logo.png" alt="google" />
-            Log In with Google
-          </a>
-          <div className="line-breaker">
-            <span className="line"></span>
-            <span>or</span>
-            <span className="line"></span>
-          </div>
-        </div>
 
-        <form className="signup-form">
-          <label className="inp">
-            <input type="email" className="input-text" placeholder="&nbsp;" />
-            <span className="label">Email</span>
-            <span className="input-icon">
-              <i className="fa-solid fa-envelope"></i>
-            </span>
-          </label>
-          <label className="inp">
+const LoginUi = () => {
+  return (
+    <div className="login-login-root">
+    <div className="login-login_form">
+      <div className="login-details">
+        <div className="login-Login">Log in..</div>
+        <div className="login-google-btn">
+          <div className="login-google-icon-wrapper">
+            <img
+              className="login-google-icon"
+              src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+            />
+          </div>
+          <p className="login-btn-text">
+            <b>Sign in with google</b>
+          </p>
+        </div>
+        <form action="/" method="post">
+          <div className="login-wrap">
+            <label className="login-Email">Email</label>
+            <input
+              type="text"
+              className="login-input"
+              placeholder="eg : abc@gmail.com"
+            />
+          </div>
+          <div className="login-wrap">
+            <label className="login-Password">Password</label>
             <input
               type="password"
-              className="input-text"
-              placeholder="&nbsp;"
-              id="password"
+              className="login-input"
+              data-type="password"
+              placeholder="eg : *****"
             />
-            <span className="label">Password</span>
-            <span className="input-icon input-icon-password" data-password>
-              <i className="fa-solid fa-eye"></i>
-            </span>
-          </label>
-          <button className="btn btn-login">Login</button>
+          </div>
+          <div className="login-wrap">
+            <label>Forgot password?</label>
+          </div>
+          <button type="submit" className="login-button">
+            <h1 className="login-sign">Sign in!</h1>
+          </button>
         </form>
-        <p className="text-mute">
-          Not a member? <a href="$">Sign up</a>
-        </p>
-      </main>
-      <div className="welcome-container">
-      <h1 className="heading-secondary">
-          Welcome to <span className="lg">PRESPECTIVE !</span>
-        </h1>
-        <img  className = "logopic" src={require('./prespective.PNG')} alt='presPECtive' />
-        
+      </div>
+      <div className="login-details-two">
+        <h1 className="login-back">Welcome to </h1>
+        <img className="login-prespective" src={require("./prespective.PNG")} />
       </div>
     </div>
+    </div>
   );
-}
-
+};
 export default LoginUi;
