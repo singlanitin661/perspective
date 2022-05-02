@@ -36,7 +36,7 @@ function CallForPapersHomePage() {
             "id": "Two",
             "Heading": "Artificial Intelligence",
             "Data": [
-                {"el":"Fuzzy Logic",                  "idd":"Thirteen"},
+                {"el":"Fuzzy Logic"                  ,"idd":"Thirteen"},
                 {"el":"Expert System"                , "idd":"Fourteen"},
                 {"el":"Agents and Multi Agent System", "idd":"Fifteen"},
                 {"el":"Computational Optimisation"   , "idd":"Sixteen"},

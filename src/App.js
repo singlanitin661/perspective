@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/LoginSignUpDummy/Login";
 import Register from "./components/LoginSignUpDummy/Register";
 import Contact from "./components/Contact/Contact";
+import CFP from "./components/CallForPapers/CFP";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                     <Route exact path="/login" element={<Login />} />
                     <Route exact path="/register" element={<Register />} />
                     <Route exact path="/contact" element={<Contact />} />
+                    <Route exact path="/cfp" element={<CFP />} />
                 </Routes>
             </Router>
 
