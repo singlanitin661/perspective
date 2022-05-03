@@ -12,38 +12,40 @@ import Register from "./components/LoginSignUpDummy/Register";
 import Contact from "./components/Contact/Contact";
 import CFP from "./components/CallForPapers/CFP";
 import ImportantDetails from "./components/ImportantDetails/ImportantDetails";
+import KeyNotes from "./components/KeyNotes/KeyNotes";
 
 function App() {
-    return (
-        <div className="App">
-            <Router>
-            <Header />
-            <CallForPapersNavbar />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route exact path="/login" element={<Login />} />
-                    <Route exact path="/register" element={<Register />} />
-                    <Route exact path="/contact" element={<Contact />} />
-                    <Route exact path="/cfp" element={<CFP />} />
-                </Routes>
-            </Router>
+  return (
+    <div className="App">
+      <Router>
+        <Header />
+        <CallForPapersNavbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/register" element={<Register />} />
+          <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/cfp" element={<CFP />} />
+          <Route exact path="/KeyNotes" element={<KeyNotes />} />
+        </Routes>
+      </Router>
 
-            <Footer />
-        </div>
-    );
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
 
 const Home = () => {
-    return (
-        <>
-            <Corousal />
-            <ImportantDetails />
-            <About />
-            <Sponsers />
-            <ConferenceCommittee />
-            <CallForPapersHomePage />
-        </>
-    );
+  return (
+    <>
+      <Corousal />
+      <ImportantDetails />
+      <About />
+      <Sponsers />
+      <ConferenceCommittee />
+      <CallForPapersHomePage />
+    </>
+  );
 };
