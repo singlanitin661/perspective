@@ -44,6 +44,7 @@ const ImportantDetails = () => {
             })
           }
         </div>
+        <a href="https://www.youtube.com/watch?v=_gEzmL1DXr8" className='imp_paper_submission'>Paper submission</a>
       </div>
 
       <div className='imp_details_section'>
