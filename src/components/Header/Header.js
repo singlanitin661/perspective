@@ -11,10 +11,20 @@ const Header = () => {
     };
     const arr = [
         { name: "Home", link: "/" },
-        { name: "Gallery", link: "/" },
-        { name: "FAQs", link: "/" },
-        { name: "Login", link: "/login" },
-        { name: "CallForPaper", link: "/cfp"},
+        { name: "About", link: "/" },
+        { name: "CFP", link: "/" },
+        { name: "Committee", link: "/" },
+        { name: "Keynotes", link: "/" },
+        { name: "Guideines", link: "/" },
+        { name: "Registration", link: "/login" },
+        { name: "Program", link: "/" },
+        { name: "Sponsorship", link: "/" },
+        { name: "Travel", link: "/" },
+        { name: "Documents", link: "/" },
+        { name: "TPC", link: "/" },
+        { name: "Contact", link: "/" },
+        // { name: "Login", link: "/login" },
+        // { name: "CallForPaper", link: "/cfp"},
     ];
     return (
         <>
@@ -23,11 +33,26 @@ const Header = () => {
                     {!hamburger ? <FaBars /> : <FaTimes />}
                 </div>
                 <nav className="header-main">
+                  <div className="header-row">
+
                     <img
                         src={pecLogo}
                         alt="persPECtive"
                         className="header-logo"
                     />
+                    <div className="header-heading">
+                      <div className="header-row1">
+                      International Conference on Futuristic Computing & Communication
+
+                      </div>
+                      <div className="header-row2">
+                        Punjab Engineering College (Deemed to be University)
+                      </div>
+                      <div className="header-row3">
+                        September 2022
+                      </div>
+                    </div>
+                  </div>
                     <ul className={`header-list` + (hamburger ? +"-ham" : "")}>
                         {arr.map((item) => {
                             return (
