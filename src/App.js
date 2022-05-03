@@ -11,6 +11,7 @@ import Login from "./components/LoginSignUpDummy/Login";
 import Register from "./components/LoginSignUpDummy/Register";
 import Contact from "./components/Contact/Contact";
 import CFP from "./components/CallForPapers/CFP";
+import ImportantDetails from "./components/ImportantDetails/ImportantDetails";
 
 function App() {
     return (
@@ -38,6 +39,7 @@ const Home = () => {
     return (
         <>
             <Corousal />
+            <ImportantDetails />
             <About />
             <Sponsers />
             <ConferenceCommittee />
