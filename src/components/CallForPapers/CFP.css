@@ -1,0 +1,19 @@
+.cfp_container {
+    text-align: center;
+}
+
+.main_body {
+    margin: 10px 20px 20px 0;
+    padding: 0px 30px;
+    font-size: 17px;
+}
+
+.about_title {
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    background-color: #e7f1fd;
+    color: #106eea;
+    font-weight: bold;
+}
