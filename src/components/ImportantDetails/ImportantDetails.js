@@ -23,7 +23,7 @@ const impDates = [
 const newsUpdates = [
   {
     text : "Something happened",
-    link : "https://www.youtube.com/watch?v=kNs-bU4qlj8"
+    link : ""
   }
 ]
 
@@ -44,7 +44,7 @@ const ImportantDetails = () => {
             })
           }
         </div>
-        <a href="https://www.youtube.com/watch?v=_gEzmL1DXr8" className='imp_paper_submission'>Paper submission</a>
+        <a href="/" className='imp_paper_submission'>Paper submission</a>
       </div>
 
       <div className='imp_details_section'>

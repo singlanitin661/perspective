@@ -1,4 +1,5 @@
 import React from "react";
+import ImportantDetails from "../ImportantDetails/ImportantDetails";
 import "./KeyNotes.css";
 
 const data = [
@@ -74,7 +75,9 @@ const KeyNotes = () => {
             );
           })}
         </div>
-        <div className="KeyNotes__flexRight"></div>
+        <div className="KeyNotes__flexRight">
+          <ImportantDetails/>
+        </div>
       </div>
     </div>
   );

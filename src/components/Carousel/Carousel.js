@@ -5,30 +5,30 @@ console.clear();
 
 const slides = [
   {
-    title: "Machu Picchu",
-    subtitle: "Peru",
-    description: "Adventure is never far away",
+    title: "",
+    subtitle: "",
+    description: "",
     image:
       "https://pec.ac.in/sites/default/files/styles/home_page_slider/public/2022-01/cims_21_front_cover.jpg?itok=RiacbaRJ"
   },
   {
-    title: "Chamonix",
-    subtitle: "France",
-    description: "Let your dreams come true",
+    title: "",
+    subtitle: "",
+    description: "",
     image:
       "https://pec.ac.in/sites/default/files/styles/home_page_slider/public/2022-01/centenary_celebrations_pec_16-11-21_cover.jpg?itok=34D91hQ8"
   },
   {
-    title: "Mimisa Rocks",
-    subtitle: "Australia",
-    description: "A piece of heaven",
+    title: "",
+    subtitle: "",
+    description: "",
     image:
       "https://media-exp1.licdn.com/dms/image/C4D22AQGHaHHgEreQbg/feedshare-shrink_800/0/1650892819467?e=2147483647&v=beta&t=m285j2PY1pJmqJGI3le_wUq0uzDxJFaWDzjGmVt5hTc"
   },
   {
-    title: "Four",
-    subtitle: "Australia",
-    description: "A piece of heaven",
+    title: "",
+    subtitle: "",
+    description: "",
     image:
       "https://pec.ac.in/sites/default/files/styles/home_page_slider/public/2022-04/website_launch_0.JPG?itok=d1OpNVIw"
   },

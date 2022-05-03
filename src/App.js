@@ -1,6 +1,5 @@
 import About from "./components/About/About";
 import CallForPapersHomePage from "./components/CallForPapersHomePage/CallForPapersHomePage";
-import CallForPapersNavbar from "./components/CallForPapersNavbar/CallForPapersNavbar";
 import ConferenceCommittee from "./components/ConferenceCommittee/ConferenceCommittee";
 import Corousal from "./components/Carousel/Carousel";
 import Header from "./components/Header/Header";
@@ -19,7 +18,6 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <CallForPapersNavbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route exact path="/login" element={<Login />} />

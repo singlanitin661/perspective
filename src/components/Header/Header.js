@@ -12,9 +12,9 @@ const Header = () => {
     const arr = [
         { name: "Home", link: "/" },
         { name: "About", link: "/" },
-        { name: "CFP", link: "/" },
+        { name: "CFP", link: "/cfp" },
         { name: "Committee", link: "/" },
-        { name: "Keynotes", link: "/" },
+        { name: "Keynotes", link: "/KeyNotes" },
         { name: "Guideines", link: "/" },
         { name: "Registration", link: "/login" },
         { name: "Program", link: "/" },
@@ -22,9 +22,7 @@ const Header = () => {
         { name: "Travel", link: "/" },
         { name: "Documents", link: "/" },
         { name: "TPC", link: "/" },
-        { name: "Contact", link: "/" },
-        // { name: "Login", link: "/login" },
-        // { name: "CallForPaper", link: "/cfp"},
+        { name: "Contact", link: "/contact" },
     ];
     return (
         <>
@@ -33,26 +31,24 @@ const Header = () => {
                     {!hamburger ? <FaBars /> : <FaTimes />}
                 </div>
                 <nav className="header-main">
-                  <div className="header-row">
-
-                    <img
-                        src={pecLogo}
-                        alt="persPECtive"
-                        className="header-logo"
-                    />
-                    <div className="header-heading">
-                      <div className="header-row1">
-                      International Conference on Futuristic Computing & Communication
-
-                      </div>
-                      <div className="header-row2">
-                        Punjab Engineering College (Deemed to be University)
-                      </div>
-                      <div className="header-row3">
-                        September 2022
-                      </div>
+                    <div className="header-row">
+                        <img
+                            src={pecLogo}
+                            alt="persPECtive"
+                            className="header-logo"
+                        />
+                        <div className="header-heading">
+                            <div className="header-row1">
+                                International Conference on Futuristic Computing
+                                & Communication
+                            </div>
+                            <div className="header-row2">
+                                Punjab Engineering College (Deemed to be
+                                University)
+                            </div>
+                            <div className="header-row3">September 2022</div>
+                        </div>
                     </div>
-                  </div>
                     <ul className={`header-list` + (hamburger ? +"-ham" : "")}>
                         {arr.map((item) => {
                             return (
