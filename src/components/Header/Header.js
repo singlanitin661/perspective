@@ -15,7 +15,7 @@ const Header = () => {
         { name: "CFP", link: "/cfp" },
         { name: "Committee", link: "/" },
         { name: "Keynotes", link: "/KeyNotes" },
-        { name: "Guideines", link: "/" },
+        { name: "Guideines", link: "/Guidelines" },
         { name: "Registration", link: "/login" },
         { name: "Program", link: "/" },
         { name: "Sponsorship", link: "/" },

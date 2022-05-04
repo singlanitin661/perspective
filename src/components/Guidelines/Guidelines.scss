@@ -1,0 +1,50 @@
+//- Google Fonts
+$font-google-primary: 'https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap';
+$font-google-secondary: 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap';
+@if variable-exists(font-google-primary) {
+  @import url($font-google-primary);
+}
+@if variable-exists(font-google-secondary) {
+  @import url($font-google-secondary);
+}
+
+.guidelines-main{
+    margin:20px;
+	font-family: montserrat;
+	padding-bottom: 50px;
+}
+
+h1 {
+	font-size: 4.5vw;
+	text-align: center;
+	font-style: bold;
+}
+
+dl {
+  counter-reset: count;
+	padding-left: 4vw;
+	padding-right: 4vw;
+	margin: 0;
+}
+
+dl + dl {
+	counter-reset: counter 4;
+}
+dt {
+  counter-increment: count;
+	color: 4f6d7aff;
+	font-family: montserrat;
+	font-size: 3.5vw;
+	text-transform: uppercase;
+}
+dt::before {
+  content: counter(count, decimal-leading-zero);
+	color: #5ea5b8ff;
+	margin-left: -1vw;
+	padding-right: 5px;
+}
+
+dd {
+	margin-left: 5vw;	
+	margin-bottom: 2vh;
+}

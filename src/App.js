@@ -12,6 +12,7 @@ import Contact from "./components/Contact/Contact";
 import CFP from "./components/CallForPapers/CFP";
 import ImportantDetails from "./components/ImportantDetails/ImportantDetails";
 import KeyNotes from "./components/KeyNotes/KeyNotes";
+import Guidelines from "./components/Guidelines/Guidelines";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/cfp" element={<CFP />} />
           <Route exact path="/KeyNotes" element={<KeyNotes />} />
+          <Route exact path="/Guidelines" element={<Guidelines />} />
         </Routes>
       </Router>
 
