@@ -1,55 +1,54 @@
 import React from "react";
 import "./LoginUi.css";
+import image from "./prespective.png";
 
-const LoginUi = () => {
+function Login() {
+  const toggleForm = () => {
+    const container = document.querySelector(".container");
+    container.classList.toggle("active");
+  };
   return (
-    <div className="login-login-root">
-    <div className="login-login_form">
-      <div className="login-details">
-        <div className="login-Login">Log in..</div>
-        <div className="login-google-btn">
-          <div className="login-google-icon-wrapper">
-            <img
-              className="login-google-icon"
-              src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-            />
+    <section className="Login_root">
+      <div className="Login_container">
+        <div className="Login_user signinBx">
+          <div className="Login_imgBx">
+            <img src={image} alt="" />
           </div>
-          <p className="login-btn-text">
-            <b>Sign in with google</b>
-          </p>
+          <div className="Login_formBx">
+            <form clasName="Login_form" action="" onSubmit="return false;">
+              <h2>Welcome to Prespective</h2>
+
+              <input
+                className="Login_Login_input"
+                type="text"
+                name=""
+                placeholder="Username"
+              />
+              <input
+                className="Login_Login_input"
+                type="password"
+                name=""
+                placeholder="Password"
+              />
+              <input
+                className="Login_Login_input"
+                type="submit"
+                name=""
+                value="Login"
+              />
+              <p className="Login_signup">
+                Don't have an account ?
+                <a href="#" onClick="toggleForm();">
+                  {"   "}
+                  Sign Up.
+                </a>
+              </p>
+            </form>
+          </div>
         </div>
-        <form action="/" method="post">
-          <div className="login-wrap">
-            <label className="login-Email">Email</label>
-            <input
-              type="text"
-              className="login-input"
-              placeholder="eg : abc@gmail.com"
-            />
-          </div>
-          <div className="login-wrap">
-            <label className="login-Password">Password</label>
-            <input
-              type="password"
-              className="login-input"
-              data-type="password"
-              placeholder="eg : *****"
-            />
-          </div>
-          <div className="login-wrap">
-            <label>Forgot password?</label>
-          </div>
-          <button type="submit" className="login-button">
-            <h1 className="login-sign">Sign in!</h1>
-          </button>
-        </form>
       </div>
-      <div className="login-details-two">
-        <h1 className="login-back">Welcome to </h1>
-        <img className="login-prespective" src={require("./prespective.PNG")} />
-      </div>
-    </div>
-    </div>
+    </section>
   );
-};
-export default LoginUi;
+}
+
+export default Login;
